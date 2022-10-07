@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&family=Montserrat:wght@100;400;700;900&family=Raleway:wght@400;500;600;700;800;900&display=swap');
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    height: 110px;
+    overflow: hidden;
+    background: #f5f2f0;
+}
+#left-section{
+    float: left;
+    margin-top: -16px;
+    width: 35%;
+    height: 100vh;
+}
+img[alt="main-image"]{
+    width: 100%;
+    height: 100%;
+}
+.logo{
+    position: absolute;
+    top: 7%;
+    left: 6%;
+    width: 8%;
+    height: 8%;
+}
+#right-section{
+    float: right;
+    width: 65%;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1% 3% 0% 3%;
+    height: 10vh;
+}
+.line1 {
+    width: 400px;
+    height: 1px;
+    margin-left: 1%;
+    margin-right: 1%;
+    background-color: #000;
+}
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 4rem;
+    cursor: pointer;
+}
+.list-items {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #969595;
+    transition: all 200ms ease-in-out;
+}
+.list-items:hover{
+    color: #312f2f;
+}
+.hero-heading{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    align-items: center;
+}
+.media-links{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    right: 4%;
+    top: 14%;
+}
+.crea{
+    -webkit-text-stroke: 1px #000;
+    font-size: 8rem;
+    margin-left: 3%;
+    color: #f5f2f0;
+    font-weight: 900;
+    font-family: Merriweather;
+}
+.tivity{
+    font-size: 8rem;
+    color: #333;
+    margin-left: 40%;
+}
+.small-heading {
+    margin-left: 20%;
+    margin-top: 20%;
+    font-family: Merriweather;
+    height: 100px;
+    font-weight: 300;
+    font-size: 1.7rem;
+    color: #7e7d7b;
+    display: flex;
+    align-items: flex-end;
+}
+.packages-btn {
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    color: #fff;
+    background: #333;
+    padding: 20px 50px;
+    position: absolute;
+    right: 10%;
+}
+
+.features {
+    position: absolute;
+    bottom: -6%;
+    right: 1%;
+    height: 40vh;
+    width: 63vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.left {
+    margin-left: 5%;
+}
+.active-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.active-content h3{
+    color: #000;
+    font-size: 1.3rem;
+}
+.circle-active {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: #000;
+}
+.active {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0%;
+    margin-left: 1rem;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.content h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 0%;
+    margin-left: 1rem;
+    color: #828282;
+}
+.circle-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.circle {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: #828282;
+}
+.line2 {
+    height: 40px;
+    width: 1px;
+    background-color: #828282;
+}
+.right {
+    margin-left: 12%;
+}
+.apostrophy img {
+    width: 15%;
+    margin-top: -5%;
+}
+.right p {
+    font-size: 1.4rem;
+}
+.dance-img {
+    width: 100%;
+    height: 100%;
+}
+.arrow {
+    position: absolute;
+    right: 8%;
+    bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.line3 {
+    width: 1px;
+    height: 100px;
+    background: #000;
+}
+.point {
+    position: absolute;
+    bottom: 0px;
+    box-sizing: border-box;
+    height: 20px;
+    width: 20px;
+    border-style: solid;
+    border-color: #000;
+    border-width: 0px 1px 1px 0px;
+    transform: rotate(45deg);
+}
+
+
+@media screen and (max-width: 867px) {
+
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    #left-section{
+        display: none;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1% 3% 0% 15%;
+        height: 10vh;
+    }
+    .crea{
+        font-size: 6rem;
+        margin-left: 15%;
+    }
+    .tivity{
+        font-size: 6rem;
+        color: #333;
+        margin-left: 30%;
+    }
+    .small-heading {
+        margin-left: 25%;
+        margin-top: 30%;
+        font-size: 1.2rem;
+    }
+    .packages-btn {
+        padding: 17px 40px;
+        position: absolute;
+        right:30%;
+    }
+    .features {
+        position: absolute;
+        bottom: -6%;
+        right: 18%;
+        height: 40vh;
+        width: 68vw;
+    }
+    .right p {
+        font-size: 1.2rem;
+    }
+
+}
